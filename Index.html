@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cacing Juara - Umpan Pemancing Terbaik</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fas fa-fish"></i>
+        <span>Cacing<strong>Juara</strong></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO dengan border gambar pemancing -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="badge">🐟 Umpan No.1 Pemancing Indonesia</span>
+        <h1>Cacing <span class="highlight">Juara</span><br>Strike Terus!</h1>
+        <p>Dapatkan cacing segar berkualitas premium untuk hasil pancingan maksimal. Dikirim langsung dari peternakan ke tangan Anda.</p>
+        <div class="hero-buttons">
+          <a href="#produk" class="btn btn-primary">Pesan Sekarang</a>
+          <a href="#keunggulan" class="btn btn-outline">Lihat Keunggulan</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>5000+</strong><span>Pelanggan</span></div>
+          <div><strong>4.9★</strong><span>Rating</span></div>
+          <div><strong>24 Jam</strong><span>Pengiriman</span></div>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600" alt="Pemancing" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUK -->
+  <section class="produk" id="produk">
+    <h2 class="section-title">Produk <span class="highlight">Unggulan</span></h2>
+    <p class="section-subtitle">Pilih umpan terbaik untuk hasil maksimal</p>
+    
+    <div class="produk-grid">
+      <div class="card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=400" alt="Cacing Lumbricus">
+          <span class="badge-hot">Best Seller</span>
+        </div>
+        <div class="card-body">
+          <h3>Cacing Lumbricus</h3>
+          <p>Umpan universal untuk semua jenis ikan air tawar. Segar & aktif.</p>
+          <div class="price">Rp 25.000 <span>/250gr</span></div>
+          <button class="btn btn-order" onclick="order('Cacing Lumbricus')">Pesan Sekarang</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1534043464124-3be32fe000c9?w=400" alt="Cacing Sutra">
+          <span class="badge-new">Baru</span>
+        </div>
+        <div class="card-body">
+          <h3>Cacing Sutra Premium</h3>
+          <p>Ideal untuk memancing ikan kecil & udang. Nutrisi tinggi.</p>
+          <div class="price">Rp 30.000 <span>/250gr</span></div>
+          <button class="btn btn-order" onclick="order('Cacing Sutra')">Pesan Sekarang</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Cacing Tanah">
+          <span class="badge-hot">Favorit</span>
+        </div>
+        <div class="card-body">
+          <h3>Cacing Tanah Super</h3>
+          <p>Umpan klasik andalan para pemancing senior. Aroma menggoda ikan.</p>
+          <div class="price">Rp 20.000 <span>/250gr</span></div>
+          <button class="btn btn-order" onclick="order('Cacing Tanah')">Pesan Sekarang</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1587824142843-7f4b0b4b6b6b?w=400" alt="Paket Hemat">
+          <span class="badge-hot">Hemat</span>
+        </div>
+        <div class="card-body">
+          <h3>Paket Jumbo Pemancing</h3>
+          <p>Kombinasi 3 jenis cacing premium + bonus wadah. Cocok untuk turnamen.</p>
+          <div class="price">Rp 75.000 <span>/paket</span></div>
+          <button class="btn btn-order" onclick="order('Paket Jumbo')">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEUNGGULAN -->
+  <section class="keunggulan" id="keunggulan">
+    <h2 class="section-title">Kenapa Pilih <span class="highlight">Kami?</span></h2>
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-leaf"></i>
+        <h3>100% Segar</h3>
+        <p>Cacing hidup & aktif, langsung dari peternakan setiap hari.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-truck-fast"></i>
+        <h3>Pengiriman Cepat</h3>
+        <p>Dikirim dalam 24 jam dengan kemasan khusus agar tetap hidup.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-award"></i>
+        <h3>Kualitas Premium</h3>
+        <p>Sudah teruji oleh ribuan pemancing profesional di seluruh Indonesia.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-headset"></i>
+        <h3>CS 24/7</h3>
+        <p>Tim kami siap membantu Anda kapan saja via WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Siap Strike Besar Hari Ini?</h2>
+    <p>Pesan sekarang dan dapatkan diskon 10% untuk pembelian pertama!</p>
+    <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20cacing" class="btn btn-primary btn-lg">
+      <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="kontak">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3><i class="fas fa-fish"></i> CacingJuara</h3>
+        <p>Umpan terbaik untuk hasil pancingan maksimal. Sejak 2020.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
+        <p><i class="fas fa-envelope"></i> halo@cacingjuara.id</p>
+        <p><i class="fas fa-map-marker-alt"></i> Bandung, Indonesia</p>
+      </div>
+      <div class="footer-col">
+        <h4>Ikuti Kami</h4>
+        <div class="socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 CacingJuara. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
